@@ -33,4 +33,5 @@ $("#problems").toggleClass("special");
 $("#button-reflection").click(function(){
 
 $("#reflection").toggleClass("special");
-   
+    
+});
