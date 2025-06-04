@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,30 +23,76 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocoding and Problem-Solving </h1>
+
 			<div class="minor-section">
-					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+				<h2>Challenge</h2>
+				<p>We were challenged to make comments from our psudocode of a existing easy game. We choose Wordle.</p>
 			</div>
 
 			<div class="minor-section">
-					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+				<h2>Problems</h2>
+				<p>We ran into the problem of disecting the code from it's broader language, into more specific coding langauge. However, we looked at the examples on canvas and figured it out.</p>
+			</div>
+		
+			<div class="minor-section">
+					<h2>Results:</h2>
+						<pre>
+							<code>
+								<p>
+									// 1. Choose a random 5-letter word in the english dictionary
+										//choose a random 5 letter word from a predefined list of valid 5 letter words in the english dictionary, save in a container called word of the day
+									// 2. Print a QWERTY keyboard
+										//print a functional keyboard with each character displaying the correct color indicator
+											//correct character; green
+											//incorrect character; dark grey
+											//untested character; light grey
+									// 3. Print a 5x6 empty word grid (5 letters and 6 guesses)
+										//loop through 6 rows
+											//loop through 5 columns
+												//print either a empty box or letter guessed with saved correct color indicators
+									// 4. Accept user input (5-letter guess)
+										//accept 5 letters into the row of empty boxes
+											//run guess when user presses enter on keyboard 
+									// 5. Validate that the guess is in the english dictionary
+										//check if the guess exists in the predefined list of valid 5 letter words in the english dictionary
+											//if guess does not exist in the predefined list 
+												//empty the row 
+												//loop back to step 4
+									// 6. & 7.  Compare guess word to target word
+										//loop through each letter of guess in the row
+											//if the letter exists in the word of the day, and is in the right spot
+												//fill box green, and display letter
+											//if the letter exists in the word of the day, but is not in the right spot
+												//fill box yellow, and display letter
+											// if the letter does not exist in the target word
+												// fill box light grey, and display letter
+									// 8. & 9. Test win or lose (out-of-guesses) condition, otherwise go back to step 2
+										// If guess does not match the word of the day, and less than 6 guesses have been made
+											//go back to step 2
+										// If guess does not match the word of the day, and 6 guesses have been made
+											// print all 5 letters in their correct color indicator
+											// print you lose and the word of the day is displayed at the top of screen 
+										//If guess matches word of the day
+											//print all 5 letters in green
+											//print you won!
+								</p>
+							</code>
+						</pre>
 			</div>
 
-			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
-			</div>
-
-			<div class="minor-section">
-					<h2>Results</h2>
-					<div id="output"></div>
-			</div>
 		</section>
 		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-		</nav>
+			<h2> Labs </h2>
+				<ul>
+					<li><a href="../lab2/index.html">Lab 2: Ty and Zeya's Homepage</a></li>
+					<li><a href="../lab3/index.html">Lab 3: File Strucutre and File Transfer</a></li>
+					<li><a href="../lab4/index.html">Lab 4: Pseudocoding and Problem-Solving</a></li>
+					<li><a href="../lab5/index.html">Lab 5: ?</a></li>
+					<li><a href="../lab6/index.html">Lab 6: ?</a></li>
+				</ul>
+			</div>
+	</nav>
 	</main>
 </body>
 </html>
